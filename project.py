@@ -49,8 +49,11 @@ root.mainloop()
 
 
 
-
-
+import shelve
+with shelve.open("data") as db:
+    data: dict =[firstnameentry]
+db.close()
+print(data)
 
 
 
